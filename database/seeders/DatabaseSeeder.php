@@ -88,8 +88,8 @@ class DatabaseSeeder extends Seeder
 
         //Usuarios
         User::create([
-            'name' => 'Brayan',
-            'email' => 'duawnbrayan@gmail.com',
+            'name' => 'Alex Paco',
+            'email' => 'alex@gmail.com',
             'password' => bcrypt('123456789'),
             'direccion' => 'calle falsa 123',
             'telefono' => '123456789',
@@ -99,8 +99,8 @@ class DatabaseSeeder extends Seeder
             'es_administrador' => true,
         ])->assignRole('Administrador');
         User::create([
-            'name' => 'evans',
-            'email' => 'evansbalcazar@uagrm.edu.bo',
+            'name' => 'Henry Saavedra',
+            'email' => 'henry@gmail.com',
             'password' => bcrypt('123456789'),
             'direccion' => 'calle falsa 123',
             'telefono' => '123456789',
@@ -108,6 +108,6 @@ class DatabaseSeeder extends Seeder
             'es_cliente' => true,
             'es_personal' => true,
             'es_administrador' => true,
-        ])->assignRole('Administrador');         
+        ])->assignRole('Administrador');
     }
 }
